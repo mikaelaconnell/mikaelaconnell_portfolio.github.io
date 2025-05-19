@@ -206,3 +206,39 @@ footer {
   text-align: center;
 }
 
+/* === Navigation Bar === */
+.custom-navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  font-family: 'Playfair Display', serif;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.custom-navbar .navbar-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #2b2b2b;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+  color: #2b2b2b;
+  margin-left: 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+  color: #3498db;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon i {
+  font-size: 1.2rem;
+  color: #2b2b2b;
+}
+
+
