@@ -2,117 +2,167 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mikaela Connell | Data Scientist</title>
-  <link rel="icon" href="images/M.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>You Should Hire Me | Mikaela Connell</title>
 
   <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Bootstrap & Custom Styles -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/portfolio_styles.css">
+  <link rel="icon" href="images/M.png">
+
+  <!-- Vanta.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
 </head>
 
 <body>
   <!-- Hero Section with Vanta Background -->
-  <header id="lead">
-    <div class="lead-content">
+  <div id="lead">
+    <div id="lead-content">
       <h1 class="lead-name">Mikaela Connell</h1>
       <h2 class="lead-title">Data Scientist</h2>
       <a href="assets/Mikaela_Connell_Resume.pdf" target="_blank" class="btn-rounded-white">Resume</a>
     </div>
-  </header>
+  </div>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top shadow-sm">
+  <header>
+    <nav>
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="background-alt">
     <div class="container">
-      <a class="navbar-brand" href="#">MC</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
+      <h2 class="heading">About Me</h2>
+      <div class="row">
+        <div class="col-md-5 text-center">
+          <img src="images/mikaela.JPG" alt="Mikaela Connell">
+          <div class="social-icons">
+            <a href="https://github.com/mikaelaconnell" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.strava.com/athletes/mikaela_connell" target="_blank"><i class="fab fa-strava"></i></a>
+            <a href="https://linkedin.com/in/mikaelaconnell" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <p>I am a Data Scientist with a background in economics, healthcare, & data analytics. Based in New York City. Outside of computer science, I enjoy running, cooking, painting, and spending time with my dogs.</p>
+          <h4>Recent News:</h4>
+          <ul>
+            <li><strong>May 2025</strong> – Currently seeking roles in Data Analytics & Data Science in NYC</li>
+            <li><strong>May 2025</strong> – Taking courses at Harvard edX and DeepLearning.AI</li>
+            <li><strong>April 2025</strong> – Joined Data Annotation as a freelance AI data analyst</li>
+            <li><strong>April 2025</strong> – Built a Bitcoin price prediction <a href="https://btc-price-predictor.streamlit.app/" target="_blank">dashboard</a></li>
+            <li><strong>Jan 2025</strong> – Began the Data Science Bootcamp at Flatiron School</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </nav>
+  </section>
 
-  <!-- Sections (About, Experience, etc.) -->
-  <main>
-    <section id="about" class="section">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <!-- About content will be dynamically loaded or added here -->
+  <!-- Experience Section -->
+  <section id="experience" class="background-alt">
+    <div class="container">
+      <h2 class="heading">Experience</h2>
+      <div id="experience-timeline">
+        <!-- Example entry -->
+        <div data-date="April 2025 – Present">
+          <h3>Data Annotation</h3>
+          <h4>AI Data Analyst</h4>
+          <ul>
+            <li>Analyzing and annotating datasets to improve large language model performance</li>
+            <li>Applying structured rubrics to assess model output</li>
+            <li>Documenting workflows and supporting product/data feedback loops</li>
+          </ul>
+        </div>
+        <!-- Add more entries as needed -->
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="experience" class="section background-alt">
-      <div class="container">
-        <h2 class="section-title">Experience</h2>
-        <!-- Experience content -->
+  <!-- Education Section -->
+  <section id="education" class="background-alt">
+    <div class="container">
+      <h2 class="heading">Education</h2>
+      <div class="education-block">
+        <h3>Flatiron School</h3>
+        <h4>Certificate in Data Science</h4>
+        <p>Completed a full-time immersive bootcamp focused on Python, SQL, machine learning, and statistical analysis.</p>
       </div>
-    </section>
+      <!-- Add more schools -->
+    </div>
+  </section>
 
-    <section id="education" class="section">
-      <div class="container">
-        <h2 class="section-title">Education</h2>
-        <!-- Education content -->
+  <!-- Projects Section -->
+  <section id="projects" class="background-alt">
+    <div class="container">
+      <h2 class="heading">Projects</h2>
+      <div class="project">
+        <h3>MacroBTC Insights</h3>
+        <p>Built a Bitcoin price predictor using macroeconomic data with XGBoost and deployed it on Streamlit.</p>
+        <a href="https://macrobtc-insights.streamlit.app/" target="_blank">App</a> |
+        <a href="https://github.com/mikaelaconnell/MacroBTC-Insights" target="_blank">Code</a>
       </div>
-    </section>
+      <!-- Add more projects -->
+    </div>
+  </section>
 
-    <section id="projects" class="section background-alt">
-      <div class="container">
-        <h2 class="section-title">Selected Projects</h2>
-        <!-- Projects content -->
-      </div>
-    </section>
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="heading">Skills</h2>
+      <ul>
+        <li>Python</li><li>SQL</li><li>Machine Learning</li><li>A/B Testing</li><li>Tableau</li><li>Power BI</li>
+      </ul>
+    </div>
+  </section>
 
-    <section id="skills" class="section">
-      <div class="container">
-        <h2 class="section-title">Skills</h2>
-        <!-- Skills content -->
+  <!-- Blog Section -->
+  <section id="blog" class="background-alt">
+    <div class="container">
+      <h2 class="heading">Latest from My Blog</h2>
+      <div class="blog-post">
+        <h3><a href="https://medium.com/@mikaelac14/from-oncology-nurse-to-data-scientist-why-i-made-the-switch-e12fdd6e4b58" target="_blank">From Oncology Nurse to Data Scientist</a></h3>
       </div>
-    </section>
+      <p style="text-align: center;"><a href="https://medium.com/@mikaelac14" class="btn-rounded-white" target="_blank">View All Posts</a></p>
+    </div>
+  </section>
 
-    <section id="blog" class="section background-alt">
-      <div class="container">
-        <h2 class="section-title">Latest from My Blog</h2>
-        <!-- Blog content -->
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container">
-        <h2 class="section-title">Get in Touch</h2>
-        <!-- Contact form -->
-      </div>
-    </section>
-  </main>
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="heading">Contact</h2>
+      <form method="POST" action="https://formspree.io/f/myzwlrgn">
+        <input type="email" name="_replyto" placeholder="Your email" required>
+        <textarea name="message" placeholder="Your message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container d-flex justify-content-between align-items-center">
-      <p class="mb-0">&copy; 2025 Mikaela Connell</p>
-      <div class="social-icons">
-        <a href="https://github.com/mikaelaconnell" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/mikaelaconnell" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.strava.com/athletes/mikaela_connell" target="_blank"><i class="fab fa-strava"></i></a>
-      </div>
+  <footer>
+    <div class="container">
+      <p>❤️ 2025 Mikaela Connell</p>
     </div>
   </footer>
 
   <!-- Scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
   <script src="js/portfolio_script.js"></script>
 </body>
 
